@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .scrollbar-custom {
+      &::-webkit-scrollbar {
+        display: none;
+       }
+    }
+    .custom-min-width {
+      min-width: calc((100vw - 80px - 40px) / 5);
+    }
+}
